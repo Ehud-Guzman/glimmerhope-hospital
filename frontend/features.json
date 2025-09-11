@@ -1,0 +1,61 @@
+{
+  "basic": {
+    "home": true,
+    "about": true,
+    "services": true,
+    "contact": true,
+    "departments": false,
+    "doctors": false,
+    "appointments": false,
+    "payment": false,
+    "patientPortal": false,
+    "liveChat": false,
+    "analytics": false,
+    "multiLanguage": false
+  },
+  "standard": {
+    "home": true,
+    "about": true,
+    "services": true,
+    "contact": true,
+    "departments": true,
+    "doctors": true,
+    "appointments": "request",
+    "payment": false,
+    "patientPortal": false,
+    "liveChat": false,
+    "analytics": false,
+    "multiLanguage": false
+  },
+  "premium": {
+    "home": true,
+    "about": true,
+    "services": true,
+    "contact": true,
+    "departments": true,
+    "doctors": true,
+    "appointments": "full",
+    "emergency": true,
+    "payment": true,
+    "patientPortal": true,
+    "liveChat": true,
+    "analytics": true,
+    "multiLanguage": true
+  },
+  "admin": {
+    "home": true,
+    "about": true,
+    "services": true,
+    "contact": true,
+    "departments": true,
+    "doctors": true,
+    "appointments": "full",
+    "admin": true,
+    "emergency": true,
+    "payment": true,
+    "patientPortal": true,
+    "liveChat": true,
+    "analytics": true,
+    "multiLanguage": true
+  }
+}
