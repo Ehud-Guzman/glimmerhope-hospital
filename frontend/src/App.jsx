@@ -46,7 +46,7 @@ export default function App() {
       <ScrollToTop />
       <Navbar enabledFeatures={enabledFeatures} />
 
-      <main className="flex-grow pt-1">
+      <main className="flex-grow pt-0">
         <Routes>
           {/* Homepage */}
           <Route

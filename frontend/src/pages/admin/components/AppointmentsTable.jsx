@@ -2,30 +2,33 @@ import AppointmentRow from "./AppointmentRow";
 
 export default function AppointmentsTable({ appointments, setAppointments, searchQuery }) {
   return (
-    <table className="w-full border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-      <thead className="bg-gray-100">
-        <tr>
-          <th className="p-3 border text-left">#</th>
-          <th className="p-3 border text-left">Name</th>
-          <th className="p-3 border text-left">Email</th>
-          <th className="p-3 border text-left">Department</th>
-          <th className="p-3 border text-left">Doctor</th>
-          <th className="p-3 border text-left">Date & Time</th>
-          <th className="p-3 border text-left">Status</th>
-          <th className="p-3 border text-center">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {appointments.map((appointment, idx) => (
-          <AppointmentRow
-            key={appointment._id || idx}
-            appointment={appointment}
-            index={idx}
-            setAppointments={setAppointments}
-            searchQuery={searchQuery}
-          />
-        ))}
-      </tbody>
-    </table>
+    <div className="overflow-x-auto rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+      <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
+        <thead className="sticky top-0 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
+          <tr>
+            <th className="p-3 text-left text-sm font-medium">#</th>
+            <th className="p-3 text-left text-sm font-medium">Name</th>
+            <th className="p-3 text-left text-sm font-medium">Email</th>
+            <th className="p-3 text-left text-sm font-medium">Department</th>
+            <th className="p-3 text-left text-sm font-medium">Doctor</th>
+            <th className="p-3 text-left text-sm font-medium">Date & Time</th>
+            <th className="p-3 text-left text-sm font-medium">Status</th>
+            <th className="p-3 text-center text-sm font-medium">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody className="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 divide-y divide-gray-200 dark:divide-gray-600">
+          {appointments.map((appointment, idx) => (
+            <AppointmentRow
+              key={appointment._id || idx}
+              appointment={appointment}
+              index={idx}
+              setAppointments={setAppointments}
+              searchQuery={searchQuery}
+            />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

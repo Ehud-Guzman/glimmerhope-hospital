@@ -12,7 +12,7 @@ import { FiMapPin, FiMail } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-blue-950 to-gray-900 text-gray-300 pt-20 pb-10 mt-10">
+    <footer className="bg-gradient-to-b from-blue-950 to-gray-900 text-gray-300 pt-20 pb-10 mt-0">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 grid md:grid-cols-4 gap-10">
         {/* Brand Section */}
         <div className="relative">
