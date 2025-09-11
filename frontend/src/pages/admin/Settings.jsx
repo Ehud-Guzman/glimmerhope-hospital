@@ -8,7 +8,7 @@ export default function Settings({ darkMode, setDarkMode }) {
 
   const tabs = [
     { id: "general", label: "General" },
-    { id: "branding", label: "Branding" },
+    
     { id: "notifications", label: "Notifications" },
   ];
 
