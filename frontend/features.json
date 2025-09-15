@@ -34,6 +34,7 @@
     "contact": true,
     "departments": true,
     "doctors": true,
+     "admin": true,
     "appointments": "full",
     "emergency": true,
     "payment": true,

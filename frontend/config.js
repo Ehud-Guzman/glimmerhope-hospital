@@ -2,4 +2,4 @@
 // Set the active tier for the website
 // Options: "basic", "standard", "premium"
 
-export const ACTIVE_TIER = "admin";
+export const ACTIVE_TIER = "basic";
