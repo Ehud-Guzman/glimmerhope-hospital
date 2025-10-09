@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutIntro() {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50 mt-0">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 grid md:grid-cols-2 gap-16 items-center">
         {/* Text */}
         <motion.div
