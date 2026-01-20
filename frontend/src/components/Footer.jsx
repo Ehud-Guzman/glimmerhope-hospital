@@ -127,7 +127,7 @@ export default function Footer() {
         <p className="flex items-center justify-center flex-wrap">
           Website created by{" "}
           <a
-            href="https://glimmerink.netlify.app"
+            href="https://glimmerink.co.ke"
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal-400 hover:text-white transition-all duration-300 mx-1 flex items-center"
